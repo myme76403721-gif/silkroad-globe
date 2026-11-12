@@ -1,0 +1,17 @@
+{
+  "name": "세계여행 플래너",
+  "short_name": "여행 플래너",
+  "description": "7개월 세계여행 일정, 예약, 가계부, 기록을 한곳에서",
+  "lang": "ko",
+  "start_url": "./index.html?app=1",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#e8eef0",
+  "theme_color": "#b3224a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

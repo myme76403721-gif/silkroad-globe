@@ -1,9 +1,9 @@
 // 오프라인 저장과 자동 업데이트를 맡는 서비스 워커
 // 화면 파일(html·js·css·json)은 인터넷이 되면 항상 새로 받아(사이트를 고치면 앱도 바로 최신화) 저장해 두고,
 // 사진·지도 라이브러리 같은 큰 파일은 한 번 받으면 저장해 둔 것을 씁니다.
-var VERSION = "2026-11-14-1";
+var VERSION = "2026-11-15-2";
 var CORE = "core-" + VERSION, MEDIA = "media-v1";
-var CORE_FILES = ["./", "./index.html", "./manifest.json", "./data/meta.json", "./data/0.enc", "./data/1.enc", "./data/2.enc", "./data/3.enc", "./data/4.enc", "./data/5.enc", "./data/6.enc", "./data/7.enc", "./data/8.enc", "./data/9.enc", "./data/10.enc", "./data/11.enc", "./data/12.enc", "./data/13.enc", "./data/14.enc", "./data/15.enc", "./data/16.enc", "./data/17.enc", "./data/18.enc", "./data/19.enc", "./data/20.enc", "./icons/icon-192.png", "./icons/icon-512.png"];
+var CORE_FILES = ["./", "./index.html", "./manifest.json", "./data/meta.json", "./data/0.enc", "./data/1.enc", "./data/2.enc", "./data/3.enc", "./data/4.enc", "./data/5.enc", "./data/6.enc", "./data/7.enc", "./data/8.enc", "./data/9.enc", "./data/10.enc", "./data/11.enc", "./data/12.enc", "./data/13.enc", "./data/14.enc", "./data/15.enc", "./data/16.enc", "./data/17.enc", "./data/18.enc", "./data/19.enc", "./data/20.enc", "./data/21.enc", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(CORE).then(function (c) {
